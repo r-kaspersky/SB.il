@@ -177,6 +177,7 @@ local function OpenDisplayMenu(entIndex)
     createButton:SetPos(0, content:GetTall() - 40)
     createButton:SetSize(content:GetWide(), 35)
     createButton:SetText("Поставить картинку")
+    createButton:SetTextColor(Color(255, 255, 255))
     createButton.Paint = function(self, w, h)
         draw.RoundedBox(5, 0, 0, w, h, self:IsHovered() and Color(60, 60, 60, 255) or Color(30, 30, 30, 250))
     end
